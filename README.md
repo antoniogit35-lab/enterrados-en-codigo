@@ -2,6 +2,10 @@
 
 Proyecto web de temática Halloween realizado por **Sergio** y **Antonio** (2.º DAW, Atlántida Formación Profesional) para el proyecto transversal DAWlloween. Es un cementerio que se recorre con el ratón: desde la verja de entrada se accede a un recetario, a un ranking de asesinos del cine, a un juego de deducción tipo Cluedo y a un formulario para escribirle a Jack.
 
+## Demo en línea
+
+Hay una versión alojada en [enterrados.byethost6.com](https://enterrados.byethost6.com). Es una adaptación de este proyecto para un hosting gratuito con PHP y MySQL; los pasos y las diferencias están en [Despliegue en Byet.host](docs/despliegue-byet.md).
+
 ## Qué incluye
 
 | Página | Archivo | Descripción |
@@ -26,7 +30,7 @@ Proyecto web de temática Halloween realizado por **Sergio** y **Antonio** (2.º
 - Apache mediante XAMPP para el entorno local.
 - Se recomienda un navegador actualizado (Chrome, Edge, Firefox o Safari recientes).
 - Extensiones de PHP necesarias: mysqli, mbstring y openssl (XAMPP las trae activadas).
-- - Tipografías Eater y Rubik Wet Paint (Google Fonts, licencia OFL), incluidas en `public/assets/fonts/`.
+- Tipografías Eater y Rubik Wet Paint (Google Fonts, licencia OFL), incluidas en `public/assets/fonts/`.
 
 ## Estructura del proyecto
 
@@ -101,6 +105,7 @@ return [
 Notas sobre el correo:
 
 - El envío usa SMTP con STARTTLS. Con Yahoo o Gmail hay que crear una **contraseña de aplicación** en la cuenta y usarla en `smtp_clave`; la contraseña normal no funciona.
+- El servidor SMTP debe corresponder al proveedor de la cuenta: `smtp.mail.yahoo.com` para Yahoo y `smtp.gmail.com` para Gmail.
 - El formulario solo está disponible para usuarios con sesión iniciada y usa el email de su cuenta como remitente de respuesta.
 - Si falta algún dato de correo, el formulario muestra un aviso de que no se ha podido enviar, y el resto de la web no se ve afectado.
 
@@ -263,6 +268,7 @@ git diff
 
 - [Guía de uso](docs/guia-de-uso.md): cómo usar la web, paso a paso.
 - [Cómo funciona el código del Cluedo](docs/cluedo-codigo.md): explicación técnica del juego.
+- [Despliegue en Byet.host](docs/despliegue-byet.md): cómo se publicó la demo en un hosting gratuito.
 
 ## Créditos
 
